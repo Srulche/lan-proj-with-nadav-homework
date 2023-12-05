@@ -1,2 +1,5 @@
 node_modules
 .env
+
+// git init starts the github directory. 
+//.env and node_modules do not upload to github
