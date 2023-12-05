@@ -24,7 +24,13 @@ async function signIn(user) {
   return token;
 }
 
+async function me(userPartial) {
+  const user = await User.findById(userPartial.id);
+  return user;
+}
+
 module.exports = {
   signUp,
   signIn,
+  me,
 };

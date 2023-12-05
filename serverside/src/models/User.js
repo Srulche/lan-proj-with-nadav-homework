@@ -28,6 +28,9 @@ const UserSchema = new mongoose.Schema({
     enum: ["BEGINNER", "INTERMMEDIATE", "ADVANCED"],
     default: "BEGINNER",
   },
+  subscriptions: [
+    { type: mongoose.Schema.Types.ObjectId, ref: "subscriptions" },
+  ],
   isAdmin: { type: Boolean, default: false },
 });
 
